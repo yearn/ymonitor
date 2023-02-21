@@ -1,0 +1,46 @@
+{
+  "node": [
+    {
+      "name": "eth-node0",
+      "url": "$ETH_NODE_0_URL",
+      "network": "ethereum"
+    },
+    {
+      "name": "eth-node1",
+      "url": "$ETH_NODE_1_URL",
+      "network": "ethereum"
+    },
+    {
+      "name": "llamanodes eth",
+      "url": "$LLAMA_ETH_NODE_0_URL",
+      "network": "ethereum"
+    },
+    {
+      "name": "ftm-node0",
+      "url": "$FTM_NODE_0_URL",
+      "network": "fantom"
+    },
+    {
+      "name": "arbi-node0",
+      "url": "$ARBI_NODE_0_URL",
+      "network": "arbitrum"
+    },
+    {
+      "name": "opti-node0",
+      "url": "$OPTI_NODE_0_URL",
+      "network": "optimism"
+    }
+  ],
+  "website": [
+    {
+      "name": "yearn.vision",
+      "url": "https://yearn.vision/?orgId=1&refresh=5m&viewPanel=17",
+      "network": "ethereum"
+    },
+    {
+      "name": "yearn.finance",
+      "url": "https://yearn.finance",
+      "network": "ethereum"
+    }
+  ]
+}
