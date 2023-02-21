@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  ymonitor:
+    image: ghcr.io/mariuspod/ymonitor:${DOCKER_TAG:-latest}
+    build: .
+    ports:
+      - 127.0.0.1:8090:8090
+    volumes:
+      - $PWD/monitors.json:/monitors.json
+    env_file: .env
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus:v2.42.0
+    ports:
+      - 127.0.0.1:9090:9090
+    volumes:
+      - $PWD/prometheus.yml:/etc/prometheus/prometheus.yml
+    restart: unless-stopped

@@ -59,7 +59,7 @@ func monitor(hostType string, hostList chan config.Host) {
 }
 
 func parseHosts() map[string][]config.Host {
-	fileName := "monitors.json"
+	fileName := "/monitors.json"
 	file, err := ioutil.ReadFile(fileName)
 	if err != nil {
 		log.Fatal("Can't read input file: " + fileName)
