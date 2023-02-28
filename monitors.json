@@ -16,8 +16,18 @@
       "network": "ethereum"
     },
     {
+      "name": "cloudflare",
+      "url": "https://cloudflare-eth.com/",
+      "network": "ethereum"
+    },
+    {
       "name": "ftm-node0",
       "url": "$FTM_NODE_0_URL",
+      "network": "fantom"
+    },
+    {
+      "name": "ankr",
+      "url": "https://rpc.ankr.com/fantom/",
       "network": "fantom"
     },
     {
@@ -26,8 +36,18 @@
       "network": "arbitrum"
     },
     {
+      "name": "getblock",
+      "url": "https://arbitrum.getblock.io/mainnet/",
+      "network": "arbitrum"
+    },
+    {
       "name": "opti-node0",
       "url": "$OPTI_NODE_0_URL",
+      "network": "optimism"
+    },
+    {
+      "name": "getblock",
+      "url": "https://op.getblock.io/mainnet/",
       "network": "optimism"
     }
   ],
