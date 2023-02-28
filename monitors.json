@@ -36,8 +36,8 @@
       "network": "arbitrum"
     },
     {
-      "name": "getblock",
-      "url": "https://arbitrum.getblock.io/mainnet/",
+      "name": "public",
+      "url": "https://arb1.arbitrum.io/rpc",
       "network": "arbitrum"
     },
     {
