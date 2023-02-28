@@ -36,7 +36,7 @@
       "network": "arbitrum"
     },
     {
-      "name": "public",
+      "name": "arbitrum public",
       "url": "https://arb1.arbitrum.io/rpc",
       "network": "arbitrum"
     },
@@ -46,8 +46,8 @@
       "network": "optimism"
     },
     {
-      "name": "getblock",
-      "url": "https://op.getblock.io/mainnet/",
+      "name": "optimism public",
+      "url": "https://mainnet.optimism.io",
       "network": "optimism"
     }
   ],
