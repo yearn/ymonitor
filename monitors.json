@@ -46,6 +46,11 @@
       "network": "optimism"
     },
     {
+      "name": "opti-rated",
+      "url": "$OPTI_NODE_1_URL",
+      "network": "optimism"
+    },
+    {
       "name": "optimism public",
       "url": "https://mainnet.optimism.io",
       "network": "optimism"
