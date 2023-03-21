@@ -37,14 +37,19 @@ var blockNumberGauge = promauto.NewGaugeVec(prometheus.GaugeOpts{
 func NodeMonitor(hosts chan config.Host) {
 	for host := range hosts {
 		url := host.Url.Url
-		log.Printf("querying node %s\n", host.Name)
+		log.Printf("querying node %s, network %s\n", host.Name, host.Network)
 
 		blockNumberRequest := BlockNumberRequest{JsonRpc: "2.0", Method: "eth_blockNumber", Id: 1}
 		payload, err := json.Marshal(blockNumberRequest)
 		if err != nil {
-			log.Fatal(err)
+			log.Print(err)
+			continue
 		}
-		res, stats := requests.DoPostRequest(url.String(), payload)
+		res, stats, err := requests.DoPostRequest(url.String(), payload)
+		if err != nil {
+			log.Print(err)
+			continue
+		}
 
 		body, err := ioutil.ReadAll(res.Body)
 		stats.End(time.Now())
@@ -63,7 +68,8 @@ func NodeMonitor(hosts chan config.Host) {
 			blockNumberRes := BlockNumberResponse{}
 			err = json.Unmarshal(body, &blockNumberRes)
 			if err != nil {
-				log.Fatal(err)
+				log.Print(err)
+				continue
 			}
 			block := new(big.Int)
 			block.SetString(blockNumberRes.Result, 0)

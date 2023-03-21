@@ -10,17 +10,21 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 )
 
-func WebsiteMonitor(hosts chan config.Host) {
+func SimpleMonitor(hosts chan config.Host, hostType string) {
 	for host := range hosts {
 		url := host.Url.Url
-		log.Printf("querying website %s\n", host.Name)
-		res, stats := requests.DoGetRequest(url.String())
+		log.Printf("querying %s %s, network %s\n", hostType, host.Name, host.Network)
+		res, stats, err := requests.DoGetRequest(url.String())
+		if err != nil {
+			log.Print(err)
+			continue
+		}
 
 		prom.Observe(stats, prometheus.Labels{
 			"host":    host.Name,
 			"network": host.Network,
 			"code":    strconv.Itoa(res.StatusCode),
-			"type":    "website",
+			"type":    hostType,
 		})
 	}
 }

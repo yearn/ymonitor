@@ -67,5 +67,32 @@
       "url": "https://yearn.finance",
       "network": "ethereum"
     }
+  ],
+  "api": [
+    {
+      "name": "V1 API",
+      "url": "https://api.yearn.finance/v1/chains/1/vaults/all",
+      "network": "ethereum"
+    },
+    {
+      "name": "V1 API",
+      "url": "https://api.yearn.finance/v1/chains/250/vaults/all",
+      "network": "fantom"
+    },
+    {
+      "name": "V1 API",
+      "url": "https://api.yearn.finance/v1/chains/42161/vaults/all",
+      "network": "arbitrum"
+    },
+    {
+      "name": "V1 API",
+      "url": "https://api.yearn.finance/v1/chains/10/vaults/all",
+      "network": "optimism"
+    },
+    {
+      "name": "yearn-exporter API",
+      "url": "https://api.yearn.vision/tvl",
+      "network": "ethereum"
+    }
   ]
 }
