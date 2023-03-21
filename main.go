@@ -51,8 +51,7 @@ func monitor(hostType string, hostList chan config.Host) {
 	switch hostType {
 	case "node":
 		workers.NodeMonitor(hostList)
-	case "website":
-	case "api":
+	case "website", "api":
 		workers.SimpleMonitor(hostList, hostType)
 	default:
 		log.Fatal("Unknown host type: " + hostType)
