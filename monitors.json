@@ -26,6 +26,11 @@
       "network": "fantom"
     },
     {
+      "name": "ftm-node1",
+      "url": "$FTM_NODE_1_URL",
+      "network": "fantom"
+    },
+    {
       "name": "ankr",
       "url": "https://rpc.ankr.com/fantom/",
       "network": "fantom"
