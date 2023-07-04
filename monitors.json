@@ -3,101 +3,122 @@
     {
       "name": "eth-node0",
       "url": "$ETH_NODE_0_URL",
-      "network": "ethereum"
+      "network": "ethereum",
+      "env": "prod"
     },
     {
       "name": "eth-node1",
       "url": "$ETH_NODE_1_URL",
-      "network": "ethereum"
+      "network": "ethereum",
+      "env": "prod"
     },
     {
       "name": "llamanodes eth",
       "url": "$LLAMA_ETH_NODE_0_URL",
-      "network": "ethereum"
+      "network": "ethereum",
+      "env": "prod"
     },
     {
       "name": "cloudflare",
       "url": "https://cloudflare-eth.com/",
-      "network": "ethereum"
+      "network": "ethereum",
+      "env": "prod"
     },
     {
       "name": "ftm-node0",
       "url": "$FTM_NODE_0_URL",
-      "network": "fantom"
+      "network": "fantom",
+      "env": "prod"
     },
     {
       "name": "ftm-node1",
       "url": "$FTM_NODE_1_URL",
-      "network": "fantom"
+      "network": "fantom",
+      "env": "prod"
     },
     {
       "name": "ankr",
       "url": "https://rpc.ankr.com/fantom/",
-      "network": "fantom"
+      "network": "fantom",
+      "env": "prod"
     },
     {
       "name": "arbi-node0",
       "url": "$ARBI_NODE_0_URL",
-      "network": "arbitrum"
+      "network": "arbitrum",
+      "env": "prod"
     },
     {
       "name": "arbitrum public",
       "url": "https://arb1.arbitrum.io/rpc",
-      "network": "arbitrum"
+      "network": "arbitrum",
+      "env": "prod"
     },
     {
       "name": "opti-node0",
       "url": "$OPTI_NODE_0_URL",
-      "network": "optimism"
+      "network": "optimism",
+      "env": "prod"
     },
     {
       "name": "opti-rated",
       "url": "$OPTI_NODE_1_URL",
-      "network": "optimism"
+      "network": "optimism",
+      "env": "prod"
     },
     {
       "name": "optimism public",
       "url": "https://mainnet.optimism.io",
-      "network": "optimism"
+      "network": "optimism",
+      "env": "prod"
     }
   ],
   "website": [
     {
       "name": "yearn.vision",
       "url": "https://yearn.vision/?orgId=1&refresh=5m&viewPanel=17",
-      "network": "ethereum"
+      "network": "ethereum",
+      "env": "prod"
     },
     {
       "name": "yearn.finance",
       "url": "https://yearn.finance",
-      "network": "ethereum"
+      "network": "ethereum",
+      "env": "prod"
     }
   ],
-  "api": [
+  "apy": [
     {
       "name": "V1 API",
       "url": "https://api.yearn.finance/v1/chains/1/vaults/all",
-      "network": "ethereum"
+      "network": "ethereum",
+      "env": "prod"
     },
     {
       "name": "V1 API",
       "url": "https://api.yearn.finance/v1/chains/250/vaults/all",
-      "network": "fantom"
+      "network": "fantom",
+      "env": "prod"
     },
     {
       "name": "V1 API",
       "url": "https://api.yearn.finance/v1/chains/42161/vaults/all",
-      "network": "arbitrum"
+      "network": "arbitrum",
+      "env": "prod"
     },
     {
       "name": "V1 API",
       "url": "https://api.yearn.finance/v1/chains/10/vaults/all",
-      "network": "optimism"
-    },
+      "network": "optimism",
+      "env": "prod"
+    }
+  ],
+  "api": [
     {
       "name": "yearn-exporter API",
       "url": "https://api.yearn.vision/tvl",
-      "network": "ethereum"
+      "network": "ethereum",
+      "env": "prod"
     }
   ]
 }

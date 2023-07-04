@@ -6,7 +6,7 @@ import (
 	"github.com/tcnksm/go-httpstat"
 )
 
-var labels = []string{"host", "network", "code", "type"}
+var labels = []string{"host", "network", "env", "code", "type"}
 
 const NS = "ymonitor"
 const SUB = "node"

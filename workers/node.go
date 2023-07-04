@@ -32,12 +32,12 @@ var blockNumberGauge = promauto.NewGaugeVec(prometheus.GaugeOpts{
 	Subsystem: prom.SUB,
 	Name:      "block_number",
 	Help:      "The latest observed block number",
-}, []string{"host", "network", "code", "type"})
+}, []string{"host", "network", "env", "code", "type"})
 
 func NodeMonitor(hosts chan config.Host) {
 	for host := range hosts {
 		url := host.Url.Url
-		log.Printf("querying node %s, network %s\n", host.Name, host.Network)
+		log.Printf("querying node: %s, network: %s, env: %s\n", host.Name, host.Network, host.Env)
 
 		blockNumberRequest := BlockNumberRequest{JsonRpc: "2.0", Method: "eth_blockNumber", Id: 1}
 		payload, err := json.Marshal(blockNumberRequest)
@@ -59,6 +59,7 @@ func NodeMonitor(hosts chan config.Host) {
 		labels := prometheus.Labels{
 			"host":    host.Name,
 			"network": host.Network,
+			"env":		 host.Env,
 			"code":    strconv.Itoa(res.StatusCode),
 			"type":    "node",
 		}

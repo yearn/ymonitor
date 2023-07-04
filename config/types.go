@@ -12,6 +12,7 @@ type Host struct {
 	Name    string `json:"name"`
 	Url     Url
 	Network string         `json:"network"`
+	Env     string         `json:"env"`
 	Auth    Authentication `json:"auth,omitempty"`
 }
 
