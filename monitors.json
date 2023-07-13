@@ -7,12 +7,6 @@
       "env": "prod"
     },
     {
-      "name": "eth-node1",
-      "url": "$ETH_NODE_1_URL",
-      "network": "ethereum",
-      "env": "prod"
-    },
-    {
       "name": "llamanodes eth",
       "url": "$LLAMA_ETH_NODE_0_URL",
       "network": "ethereum",
@@ -27,12 +21,6 @@
     {
       "name": "ftm-node0",
       "url": "$FTM_NODE_0_URL",
-      "network": "fantom",
-      "env": "prod"
-    },
-    {
-      "name": "ftm-node1",
-      "url": "$FTM_NODE_1_URL",
       "network": "fantom",
       "env": "prod"
     },
@@ -57,12 +45,6 @@
     {
       "name": "opti-node0",
       "url": "$OPTI_NODE_0_URL",
-      "network": "optimism",
-      "env": "prod"
-    },
-    {
-      "name": "opti-rated",
-      "url": "$OPTI_NODE_1_URL",
       "network": "optimism",
       "env": "prod"
     },
