@@ -101,6 +101,30 @@
       "url": "https://api.yearn.vision/tvl",
       "network": "ethereum",
       "env": "prod"
+    },
+    {
+      "name": "yearn-exporter API arbitrum",
+      "url": "https://api.yearn.vision/tvl/arb",
+      "network": "arbitrum",
+      "env": "prod"
+    },
+    {
+      "name": "yearn-exporter API ethereum",
+      "url": "https://api.yearn.vision/tvl/eth",
+      "network": "ethereum",
+      "env": "prod"
+    },
+    {
+      "name": "yearn-exporter API fantom",
+      "url": "https://api.yearn.vision/tvl/ftm",
+      "network": "fantom",
+      "env": "prod"
+    },
+    {
+      "name": "yearn-exporter API optimism",
+      "url": "https://api.yearn.vision/tvl/opt",
+      "network": "optimism",
+      "env": "prod"
     }
   ]
 }
