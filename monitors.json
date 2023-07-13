@@ -7,12 +7,6 @@
       "env": "prod"
     },
     {
-      "name": "eth-node1",
-      "url": "$ETH_NODE_1_URL",
-      "network": "ethereum",
-      "env": "prod"
-    },
-    {
       "name": "llamanodes eth",
       "url": "$LLAMA_ETH_NODE_0_URL",
       "network": "ethereum",
@@ -27,12 +21,6 @@
     {
       "name": "ftm-node0",
       "url": "$FTM_NODE_0_URL",
-      "network": "fantom",
-      "env": "prod"
-    },
-    {
-      "name": "ftm-node1",
-      "url": "$FTM_NODE_1_URL",
       "network": "fantom",
       "env": "prod"
     },
@@ -57,12 +45,6 @@
     {
       "name": "opti-node0",
       "url": "$OPTI_NODE_0_URL",
-      "network": "optimism",
-      "env": "prod"
-    },
-    {
-      "name": "opti-rated",
-      "url": "$OPTI_NODE_1_URL",
       "network": "optimism",
       "env": "prod"
     },
@@ -118,6 +100,30 @@
       "name": "yearn-exporter API",
       "url": "https://api.yearn.vision/tvl",
       "network": "ethereum",
+      "env": "prod"
+    },
+    {
+      "name": "yearn-exporter API arbitrum",
+      "url": "https://api.yearn.vision/tvl/arb",
+      "network": "arbitrum",
+      "env": "prod"
+    },
+    {
+      "name": "yearn-exporter API ethereum",
+      "url": "https://api.yearn.vision/tvl/eth",
+      "network": "ethereum",
+      "env": "prod"
+    },
+    {
+      "name": "yearn-exporter API fantom",
+      "url": "https://api.yearn.vision/tvl/ftm",
+      "network": "fantom",
+      "env": "prod"
+    },
+    {
+      "name": "yearn-exporter API optimism",
+      "url": "https://api.yearn.vision/tvl/opt",
+      "network": "optimism",
       "env": "prod"
     }
   ]
