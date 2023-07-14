@@ -93,6 +93,12 @@
       "url": "https://api.yearn.finance/v1/chains/10/vaults/all",
       "network": "optimism",
       "env": "prod"
+    },
+    {
+      "name": "Curve factory vaults APY previews",
+      "url": "https://api.yearn.finance/v1/chains/1/apy-previews/curve-factory",
+      "network": "ethereum",
+      "env": "prod"
     }
   ],
   "api": [
