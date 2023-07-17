@@ -37,6 +37,12 @@
       "env": "prod"
     },
     {
+      "name": "arbi-classic-node0",
+      "url": "$ARBI_CLASSIC_NODE_0_URL",
+      "network": "arbitrum",
+      "env": "prod"
+    },
+    {
       "name": "arbitrum public",
       "url": "https://arb1.arbitrum.io/rpc",
       "network": "arbitrum",
