@@ -77,6 +77,12 @@
       "env": "prod"
     },
     {
+      "name": "V1 API experimental",
+      "url": "https://api.yearn.finance/v1/chains/1/vaults/experimental",
+      "network": "ethereum",
+      "env": "prod"
+    },
+    {
       "name": "V1 API",
       "url": "https://api.yearn.finance/v1/chains/250/vaults/all",
       "network": "fantom",
