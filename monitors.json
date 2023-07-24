@@ -59,6 +59,18 @@
       "url": "https://mainnet.optimism.io",
       "network": "optimism",
       "env": "prod"
+    },
+    {
+      "name": "avalanche public",
+      "url": "https://rpc.ankr.com/avalanche",
+      "network": "avalanche",
+      "env": "prod"
+    },
+    {
+      "name": "avax-node0",
+      "url": "$AVAX_NODE_0_URL",
+      "network": "avalanche",
+      "env": "prod"
     }
   ],
   "website": [
