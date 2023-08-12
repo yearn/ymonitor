@@ -77,6 +77,18 @@
       "url": "$AVAX_NODE_0_URL",
       "network": "avalanche",
       "env": "prod"
+    },
+    {
+      "name": "polygon public",
+      "url": "https://rpc.ankr.com/polygon",
+      "network": "polygon",
+      "env": "prod"
+    },
+    {
+      "name": "poly-node0",
+      "url": "$POLY_NODE_0_URL",
+      "network": "polygon",
+      "env": "prod"
     }
   ],
   "website": [
