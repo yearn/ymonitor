@@ -89,6 +89,18 @@
       "url": "$POLY_NODE_0_URL",
       "network": "polygon",
       "env": "prod"
+    },
+    {
+      "name": "base public",
+      "url": "https://rpc.ankr.com/base",
+      "network": "base",
+      "env": "prod"
+    },
+    {
+      "name": "base-node0",
+      "url": "$BASE_NODE_0_URL",
+      "network": "base",
+      "env": "prod"
     }
   ],
   "website": [
