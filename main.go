@@ -51,6 +51,8 @@ func monitor(hostType string, hostList chan config.Host) {
 	switch hostType {
 	case "node":
 		workers.NodeMonitor(hostList)
+	case "txPool":
+		workers.TxPoolMonitor(hostList)
 	case "website", "api":
 		workers.SimpleMonitor(hostList, hostType)
 	case "apy":

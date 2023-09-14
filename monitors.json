@@ -103,6 +103,14 @@
       "env": "prod"
     }
   ],
+  "txPool": [
+    {
+      "name": "erigon txPool",
+      "url": "$ETH_NODE_0_URL",
+      "network": "ethereum",
+      "env": "prod"
+    }
+  ],
   "website": [
     {
       "name": "yearn.vision",
