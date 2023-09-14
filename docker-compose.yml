@@ -24,6 +24,7 @@ services:
     volumes:
       - $PWD/prometheus.yml:/etc/prometheus/prometheus.yml
     command:
+      - "-promscrape.maxScrapeSize=100MB"
       - "-promscrape.config=/etc/prometheus/prometheus.yml"
       - "-remoteWrite.url=http://victoria-metrics:8428/api/v1/write"
     links:
