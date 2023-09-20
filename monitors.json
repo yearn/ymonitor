@@ -128,37 +128,37 @@
   "apy": [
     {
       "name": "V1 API",
-      "url": "https://api.yearn.finance/v1/chains/1/vaults/all",
+      "url": "https://api.yexporter.io/v1/chains/1/vaults/all",
       "network": "ethereum",
       "env": "prod"
     },
     {
       "name": "V1 API experimental",
-      "url": "https://api.yearn.finance/v1/chains/1/vaults/experimental",
+      "url": "https://api.yexporter.io/v1/chains/1/vaults/experimental",
       "network": "ethereum",
       "env": "prod"
     },
     {
       "name": "V1 API",
-      "url": "https://api.yearn.finance/v1/chains/250/vaults/all",
+      "url": "https://api.yexporter.io/v1/chains/250/vaults/all",
       "network": "fantom",
       "env": "prod"
     },
     {
       "name": "V1 API",
-      "url": "https://api.yearn.finance/v1/chains/42161/vaults/all",
+      "url": "https://api.yexporter.io/v1/chains/42161/vaults/all",
       "network": "arbitrum",
       "env": "prod"
     },
     {
       "name": "V1 API",
-      "url": "https://api.yearn.finance/v1/chains/10/vaults/all",
+      "url": "https://api.yexporter.io/v1/chains/10/vaults/all",
       "network": "optimism",
       "env": "prod"
     },
     {
       "name": "Curve factory vaults APY previews",
-      "url": "https://api.yearn.finance/v1/chains/1/apy-previews/curve-factory",
+      "url": "https://api.yexporter.io/v1/chains/1/apy-previews/curve-factory",
       "network": "ethereum",
       "env": "prod"
     }
