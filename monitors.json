@@ -49,18 +49,6 @@
       "env": "prod"
     },
     {
-      "name": "opti-node1",
-      "url": "$OPTI_NODE_1_URL",
-      "network": "optimism",
-      "env": "prod"
-    },
-    {
-      "name": "opti-node2",
-      "url": "$OPTI_NODE_2_URL",
-      "network": "optimism",
-      "env": "prod"
-    },
-    {
       "name": "optimism public",
       "url": "https://mainnet.optimism.io",
       "network": "optimism",
