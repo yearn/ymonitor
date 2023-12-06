@@ -15,6 +15,13 @@
       "env": "prod"
     },
     {
+      "name": "erigon-node1",
+      "url": "$ERIGON_NODE_1_URL",
+      "provider": "dyRPC",
+      "network": "ethereum",
+      "env": "prod"
+    },
+    {
       "name": "cloudflare",
       "provider": "cloudflare",
       "url": "https://cloudflare-eth.com/",
