@@ -89,6 +89,12 @@ func blockExplorerRedirect(w http.ResponseWriter, req *http.Request) {
 		url = "https://optimistic.etherscan.io/block/" + block
 	case "arbitrum":
 		url = "https://arbiscan.io/block/" + block
+	case "base":
+		url = "https://basescan.org/block/" + block
+	case "polygon":
+		url = "https://polygonscan.com/block/" + block
+	case "avax":
+		url = "https://snowtrace.io/block/" + block
 	default:
 		url = "https://etherscan.io/block/" + block
 	}
