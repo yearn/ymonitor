@@ -9,11 +9,12 @@ import (
 )
 
 type Host struct {
-	Name    string `json:"name"`
-	Url     Url
-	Network string         `json:"network"`
-	Env     string         `json:"env"`
-	Auth    Authentication `json:"auth,omitempty"`
+	Name     string `json:"name"`
+	Provider string `json:"provider"`
+	Url      Url
+	Network  string         `json:"network"`
+	Env      string         `json:"env"`
+	Auth     Authentication `json:"auth,omitempty"`
 }
 
 type Authentication struct {

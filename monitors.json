@@ -3,90 +3,91 @@
     {
       "name": "eth-node0",
       "url": "$ETH_NODE_0_URL",
+      "provider": "dyRPC",
       "network": "ethereum",
       "env": "prod"
     },
     {
-      "name": "llamanodes eth",
-      "url": "$LLAMA_ETH_NODE_0_URL",
+      "name": "eth-node1",
+      "url": "$ETH_NODE_1_URL",
+      "provider": "dyRPC",
       "network": "ethereum",
       "env": "prod"
     },
     {
       "name": "cloudflare",
+      "provider": "cloudflare",
       "url": "https://cloudflare-eth.com/",
       "network": "ethereum",
       "env": "prod"
     },
     {
-      "name": "ftm-node0",
-      "url": "$FTM_NODE_0_URL",
-      "network": "fantom",
-      "env": "prod"
-    },
-    {
       "name": "ankr",
       "url": "https://rpc.ankr.com/fantom/",
+      "provider": "ankr",
       "network": "fantom",
-      "env": "prod"
-    },
-    {
-      "name": "arbi-node0",
-      "url": "$ARBI_NODE_0_URL",
-      "network": "arbitrum",
-      "env": "prod"
-    },
-    {
-      "name": "arbitrum public",
-      "url": "https://arb1.arbitrum.io/rpc",
-      "network": "arbitrum",
       "env": "prod"
     },
     {
       "name": "opti-node0",
       "url": "$OPTI_NODE_0_URL",
+      "provider": "dyRPC",
+      "network": "optimism",
+      "env": "prod"
+    },
+    {
+      "name": "opti-node1",
+      "url": "$OPTI_NODE_1_URL",
+      "provider": "dyRPC",
       "network": "optimism",
       "env": "prod"
     },
     {
       "name": "optimism public",
       "url": "https://mainnet.optimism.io",
+      "provider": "optimism",
       "network": "optimism",
       "env": "prod"
     },
     {
       "name": "avalanche public",
       "url": "https://rpc.ankr.com/avalanche",
-      "network": "avalanche",
-      "env": "prod"
-    },
-    {
-      "name": "avax-node0",
-      "url": "$AVAX_NODE_0_URL",
+      "provider": "avalanche",
       "network": "avalanche",
       "env": "prod"
     },
     {
       "name": "polygon public",
       "url": "https://rpc.ankr.com/polygon",
+      "provider": "polygon",
       "network": "polygon",
       "env": "prod"
     },
     {
       "name": "poly-node0",
       "url": "$POLY_NODE_0_URL",
+      "provider": "dyRPC",
       "network": "polygon",
       "env": "prod"
     },
     {
       "name": "base public",
       "url": "https://rpc.ankr.com/base",
+      "provider": "ankr",
       "network": "base",
       "env": "prod"
     },
     {
       "name": "base-node0",
       "url": "$BASE_NODE_0_URL",
+      "provider": "dyRPC",
+      "network": "base",
+      "env": "prod"
+    },
+    {
+      "name": "base-node1",
+      "url": "$BASE_NODE_1_URL",
+      "provider": "dyRPC",
       "network": "base",
       "env": "prod"
     }

@@ -33,7 +33,7 @@ var txPoolGauge = promauto.NewGaugeVec(prometheus.GaugeOpts{
 	Subsystem: prom.SUB,
 	Name:      "tx_pool",
 	Help:      "The latest observed nonce for a given address",
-}, []string{"host", "network", "env", "code", "type"})
+}, []string{"host", "network", "env", "code", "type", "client", "provider"})
 
 func TxPoolMonitor(hosts chan config.Host) {
 	for host := range hosts {
@@ -59,11 +59,13 @@ func TxPoolMonitor(hosts chan config.Host) {
 			log.Fatal(err)
 		}
 		labels := prometheus.Labels{
-			"host":    host.Name,
-			"network": host.Network,
-			"env":     host.Env,
-			"code":    strconv.Itoa(res.StatusCode),
-			"type":    "txPool",
+			"host":     host.Name,
+			"network":  host.Network,
+			"env":      host.Env,
+			"code":     strconv.Itoa(res.StatusCode),
+			"type":     "txPool",
+			"client":   "n/a",
+			"provider": "n/a",
 		}
 		prom.Observe(stats, labels)
 

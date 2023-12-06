@@ -21,11 +21,13 @@ func SimpleMonitor(hosts chan config.Host, hostType string) {
 		}
 
 		prom.Observe(stats, prometheus.Labels{
-			"host":    host.Name,
-			"network": host.Network,
-			"env":		 host.Env,
-			"code":    strconv.Itoa(res.StatusCode),
-			"type":    hostType,
+			"host":     host.Name,
+			"network":  host.Network,
+			"env":      host.Env,
+			"code":     strconv.Itoa(res.StatusCode),
+			"type":     hostType,
+			"client":   "n/a",
+			"provider": "website",
 		})
 	}
 }

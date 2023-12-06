@@ -19,7 +19,7 @@ var apyGauge = promauto.NewGaugeVec(prometheus.GaugeOpts{
 	Subsystem: prom.SUB,
 	Name:      "apy_timestamp",
 	Help:      "The latest observed apy timestamp in seconds",
-}, []string{"host", "network", "env", "code", "type"})
+}, []string{"host", "network", "env", "code", "type", "client", "provider"})
 
 func ApyMonitor(hosts chan config.Host) {
 	for host := range hosts {
@@ -35,11 +35,13 @@ func ApyMonitor(hosts chan config.Host) {
 		stats.End(time.Now())
 
 		labels := prometheus.Labels{
-			"host":    host.Name,
-			"network": host.Network,
-			"env":     host.Env,
-			"code":    strconv.Itoa(res.StatusCode),
-			"type":    "apy",
+			"host":     host.Name,
+			"network":  host.Network,
+			"env":      host.Env,
+			"code":     strconv.Itoa(res.StatusCode),
+			"type":     "apy",
+			"client":   "n/a",
+			"provider": "yexporter",
 		}
 		prom.Observe(stats, labels)
 		if res.StatusCode >= 200 {
