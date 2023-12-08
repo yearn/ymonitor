@@ -43,9 +43,14 @@ func NodeMonitor(hosts chan config.Host) {
 
 		block, statusCode, stats, err := getBlockNumber(url.String())
 		if err != nil {
+			log.Print(err)
 			continue
 		}
 		clientVersion, _, _, err := getClientVersion(url.String())
+		if err != nil {
+			log.Print(err)
+			continue
+		}
 
 		labels := prometheus.Labels{
 			"host":     host.Name,
